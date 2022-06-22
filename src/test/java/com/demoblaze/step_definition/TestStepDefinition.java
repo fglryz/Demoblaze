@@ -24,9 +24,9 @@ public class TestStepDefinition {
        // Alert alert=Driver.getDriver().switchTo().alert();
        // alert.accept();
     }
-    @When("buyer clinks on {string} link")
-    public void buyer_clinks_on_link(String link) {
- productPage.getLink(link);
+    @When("buyer clicks on {string} link")
+    public void buyer_clicks_on_link(String link) {
+      productPage.getLink(link);
     }
 
 }
