@@ -21,8 +21,8 @@ public class TestStepDefinition {
     public void buyer_adds_from_category(String category, String product) {
      productPage.getLink(category);
      productPage.getLink(product);
-     WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
-     wait.until(ExpectedConditions.alertIsPresent());
+     //WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
+     //wait.until(ExpectedConditions.alertIsPresent());
         //Alert alert=Driver.getDriver().switchTo().alert();
     //alert.accept();
     }
