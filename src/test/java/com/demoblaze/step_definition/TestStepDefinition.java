@@ -23,8 +23,8 @@ public class TestStepDefinition {
      productPage.getLink(product);
      WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
      wait.until(ExpectedConditions.alertIsPresent());
-        Alert alert=Driver.getDriver().switchTo().alert();
-    alert.accept();
+        //Alert alert=Driver.getDriver().switchTo().alert();
+   // alert.accept();
     }
     @When("buyer clicks on {string} link")
     public void buyer_clicks_on_link(String link) {
