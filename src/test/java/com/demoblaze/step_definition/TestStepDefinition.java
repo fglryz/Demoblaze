@@ -21,10 +21,10 @@ public class TestStepDefinition {
     public void buyer_adds_from_category(String category, String product) {
      productPage.getLink(category);
      productPage.getLink(product);
-     //WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
-     //wait.until(ExpectedConditions.alertIsPresent());
-        //Alert alert=Driver.getDriver().switchTo().alert();
-   // alert.accept();
+     WebDriverWait wait=new WebDriverWait(Driver.getDriver(),5);
+     wait.until(ExpectedConditions.alertIsPresent());
+        Alert alert=Driver.getDriver().switchTo().alert();
+   alert.accept();
     }
     @When("buyer clicks on {string} link")
     public void buyer_clicks_on_link(String link) {
