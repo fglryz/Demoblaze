@@ -48,18 +48,6 @@ access to the object of this class from outside the class
                 switch statement will determine the case, and open the matching browser
             */
             switch (browserType){
-                case "remote-chrome":
-                    try {
-                        // assign your grid server address
-                        String gridAddress = "3.87.226.45";
-                        URL url = new URL("http://" + gridAddress + ":4444/wd/hub");
-                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-                        desiredCapabilities.setBrowserName("chrome");
-                        driverPool.set( new RemoteWebDriver(url, desiredCapabilities));
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    break;
 
                 case "chrome":
                     WebDriverManager.chromedriver().setup();

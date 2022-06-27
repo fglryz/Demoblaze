@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.87">
+    <testcase classname="Purchase Functionality of Demoblaze Application" name="Adding product to chart" time="9.705">
+        <failure message="Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Atlantics-MacBook-Pro.local', ip: '2a00:23c7:e185:7a01:7d10:4e0e:d700:971f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.12'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/sj/9dj8xqks11j...}, goog:chromeOptions: {debuggerAddress: localhost:54037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 01911dd4cdced24342c050b73e2b43b9" type="org.openqa.selenium.TimeoutException">
+            <![CDATA[Given buyer is on the homepage of demoblaze.................................passed
+When buyer adds from "Laptops" category "Sony vaio i5"......................failed
+And buyer clicks on "Cart" link.............................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Atlantics-MacBook-Pro.local', ip: '2a00:23c7:e185:7a01:7d10:4e0e:d700:971f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/sj/9dj8xqks11j...}, goog:chromeOptions: {debuggerAddress: localhost:54037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01911dd4cdced24342c050b73e2b43b9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demoblaze.step_definition.TestStepDefinition.buyer_adds_from_category(TestStepDefinition.java:25)
+	at ✽.buyer adds from "Laptops" category "Sony vaio i5"(file:///Users/atlantic/IdeaProjects/Demoblaze/src/test/resources/features/test.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
